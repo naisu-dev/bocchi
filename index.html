@@ -11,9 +11,9 @@
     <p>↓最近買ったアルバム↓</p>
     <a href="https://bocchi.rocks/" target="_blank"><img src="bocchialbum.jpg" alt="ぼっち・ざ・ろっく！" class="img-fluid"></a>
     <script>
-      var bocchi = document.createElement("img");
-      var i = Math.floor(Math.random() * 68) + 1;
-      var path = "img/bocchi" + i + ".jpg";
+      let bocchi = document.createElement("img");
+      let i = Math.floor(Math.random() * 68) + 1;
+      let path = "img/bocchi" + i + ".jpg";
       bocchi.src = path;
       let body = document.getElementById("body");
       body.append(bocchi);
