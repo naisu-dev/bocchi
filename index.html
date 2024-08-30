@@ -15,14 +15,14 @@
       let ogp = document.createElement("meta");
       let i = Math.floor(Math.random() * 68) + 1;
       let path = "img/bocchi" + i + ".jpg";
-      let ogp_path = "https://bocchi.naisu.moe/" + path
+      let ogp_path = "https://bocchi.naisu.moe/" + path;
       bocchi.src = path;
-      ogp.property = "og:image"
-      ogp.content = ogp_path
+      ogp.property = "og:image";
+      ogp.content = ogp_path;
       let body = document.getElementById("body");
       let head = document.getElementById("head");
       body.append(bocchi);
-      head.append(ogp)
+      head.append(ogp);
     </script>
   </body>
 </html>
