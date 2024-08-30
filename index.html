@@ -19,6 +19,7 @@
       let path = "img/bocchi" + i + ".jpg";
       let ogp_path = "https://bocchi.naisu.moe/" + path;
       bocchi.src = path;
+      bocchi.class = "img-fluid";
       ogp.property = "og:image";
       ogp.content = ogp_path;
       let body = document.getElementById("body");
