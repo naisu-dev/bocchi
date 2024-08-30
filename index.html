@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-  <head>
+  <head id="head">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -12,11 +12,17 @@
     <a href="https://bocchi.rocks/" target="_blank"><img src="bocchialbum.jpg" alt="ぼっち・ざ・ろっく！" class="img-fluid"></a>
     <script>
       let bocchi = document.createElement("img");
+      let ogp = document.createElement("meta");
       let i = Math.floor(Math.random() * 68) + 1;
       let path = "img/bocchi" + i + ".jpg";
+      let ogp_path = "https://bocchi.naisu.moe/" + path
       bocchi.src = path;
+      ogp.property = "og:image"
+      ogp.content = ogp_path
       let body = document.getElementById("body");
+      let head = document.getElementById("head");
       body.append(bocchi);
+      head.append(ogp)
     </script>
   </body>
 </html>
