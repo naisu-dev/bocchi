@@ -7,6 +7,7 @@
     <title>ぼっちちゃん結婚しよう</title>
     <meta property="og:title" content="ぼっちちゃん結婚しよう">
     <meta property="og:url" content="https://bocchi.naisu.moe/">
+    <meta name="og:image" content="https://bocchi.naisu.moe/bocchi1.jpg" id="ogp">
   </head>
   <body class="text-center container" id="body">
     <h1 style="padding-top: 1em; padding-bottom: 1em;">ぼっちちゃん！結婚しよう！！</h1>
@@ -14,7 +15,7 @@
     <a href="https://bocchi.rocks/" target="_blank"><img src="bocchialbum.jpg" alt="ぼっち・ざ・ろっく！" class="img-fluid"></a>
     <script>
       let bocchi = document.createElement("img");
-      let ogp = document.createElement("meta");
+      let ogp = document.getElementById("ogp");
       let i = Math.floor(Math.random() * 68) + 1;
       let path = "img/bocchi" + i + ".jpg";
       let ogp_path = "https://bocchi.naisu.moe/" + path;
@@ -23,9 +24,7 @@
       ogp.property = "og:image";
       ogp.content = ogp_path;
       let body = document.getElementById("body");
-      let head = document.getElementById("head");
       body.append(bocchi);
-      head.append(ogp);
     </script>
   </body>
 </html>
