@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>ぼっちちゃん結婚しよう</title>
     <meta name="ogp:title" content="ぼっち">
-    <meta name="og:url" content="https://bocchi.naisu.moe/">
+    <meta name="ogp:url" content="https://bocchi.naisu.moe/">
   </head>
   <body class="text-center container" id="body">
     <h1 style="padding-top: 1em; padding-bottom: 1em;">ぼっちちゃん！結婚しよう！！</h1>
@@ -19,7 +19,7 @@
       let path = "img/bocchi" + i + ".jpg";
       let ogp_path = "https://bocchi.naisu.moe/" + path;
       bocchi.src = path;
-      ogp.property = "og:image";
+      ogp.property = "ogp:image";
       ogp.content = ogp_path;
       let body = document.getElementById("body");
       let head = document.getElementById("head");
